@@ -11,11 +11,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BEDLA Mua</title>
-        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='../static/img/favicon.png') }}">
         <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
         <link href="{{ url_for('static', filename='css/themify-icons.css') }}" rel="stylesheet">
-        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-        <link href="{{ url_for('static', filename='css/owl.carousel.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
         <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
         {% block css_styles %}
             
@@ -50,7 +50,7 @@
                     <!-- Logo -->
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <div class="brand"><img src="img/logo-light.png" alt="BEDLA"></div>
+                            <div class="brand"><img src="../static/img/logo-light.png" alt="BEDLA"></div>
                         </div>
                     </div>
                     <!-- Copyright -->
@@ -64,10 +64,10 @@
         </div>
         
 
-        <!-- jQuery -->
-        <script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/vendor/owl.carousel.min.js') }}"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="{{ url_for('static', filename='js/vendor/imagesloaded.pkgd.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/vendor/jquery.isotope.v3.0.2.js') }}"></script>
         <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
